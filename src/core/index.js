@@ -1,4 +1,4 @@
-import InitEvent from '@/src/modules/events'
+import InitEvent from '../modules/events'
 
 class Keyboard {
     constructor(options) {
