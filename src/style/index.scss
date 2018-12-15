@@ -9,6 +9,7 @@
 
     .left {
         flex: 3;
+        margin-right: 2px;
         div {
             display: flex;
 
@@ -18,12 +19,12 @@
 
             span {
                 flex: 1;
-                height: 60px;
-                line-height: 60px;
+                height: 53px;
+                line-height: 53px;
                 font-size: 30px;
                 color: #424857;
                 text-align: center;
-                background: #D4D4D4;
+                background: #f7f8f9;
 
                 &:active {
                     background: #d4d4d480;
@@ -31,6 +32,12 @@
 
                 &:nth-of-type(2) {
                     margin: 0 2px;
+                }
+            }
+
+            span[data-keycode="del"] {
+                img {
+                    height: 20px;
                 }
             }
         }
