@@ -12,7 +12,7 @@ class Keyboard {
     }
 
     getDom(target) {
-        if (target instanceof HTMLDocument) {
+        if (target instanceof HTMLElement) {
             return target
         } else {
             return document.getElementById(target)
