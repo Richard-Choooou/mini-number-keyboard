@@ -1,6 +1,12 @@
 .keyboard-container {
     display: flex;
     width: 100%;
+    user-select: none;
+
+    img {
+        pointer-events: none; 
+    }
+    
     > * {
         margin: 0;
         padding: 0;

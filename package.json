@@ -1,6 +1,6 @@
 {
   "name": "mini-number-keyboard",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "一个移动端数字键盘",
   "main": "./dist/keyboard.min.js",
   "scripts": {
