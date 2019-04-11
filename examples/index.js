@@ -1,4 +1,4 @@
-import KeyBoard from '@src/index'
+import KeyBoard from '../src/index'
 
 
 let keyBoard = new KeyBoard({

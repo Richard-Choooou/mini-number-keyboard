@@ -55,16 +55,31 @@
 
             
         }
-
         .top {
+            display: flex;
             flex: 1;
-            background: #CCEAE7;
-            font-size: 20px;
-            color: #009688;
-            &:active {
-                background: #cceae78f;
-                transform: scale(1);
+            flex-direction: column;
+            margin-bottom: 2px;
+            
+            > div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                width: 100%;
+                background: #CCEAE7;
+                color: #009688;
+                font-size: 16px;
+                font-weight: bold;
+
+                &:active {
+                    background: #cceae78f;
+                }
             }
+        }
+
+        .top-1 {
+            margin-bottom: 2px;
         }
 
         .bottom {
@@ -72,7 +87,7 @@
             background: #009688;
             font-size: 30px;
             color: #FFFFFF;
-            box-shadow: 0 1px 4px 0 #009688;
+            // box-shadow: 0 1px 4px 0 #009688;
             &:active {
                 background: #009688c9;
                 transform: scale(1);

@@ -36,7 +36,10 @@ class Keyboard {
                         <span data-keycode="del"><img src="${arrow}"></span>
                     </div>
                 </div><div class="right">
-                    <div class="top" data-keycode="next">下一项</div>
+                    <div class="top">
+                        <div class="top-1" data-keycode="next">下一项</div>
+                        <div class="top-2" data-keycode="nextGoods">货品切换</div>
+                    </div>
                     <div class="bottom" data-keycode="confirm">确认</div>
                 </div>
             </div>
