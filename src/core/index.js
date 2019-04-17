@@ -44,7 +44,7 @@ class Keyboard {
                         <span data-keycode="del"><img src="${arrow}"></span>
                     </div>
                 </div><div class="right">
-                    <div class="top" data-keycode="next">切换货品</div>
+                    <div class="top" data-keycode="nextGoods">切换货品</div>
                     <div class="bottom" data-keycode="confirm">确认</div>
                 </div>
             </div>
