@@ -69,10 +69,6 @@
             background: #CCEAE7;
             font-size: 20px;
             color: #009688;
-            &:active {
-                background: rgba(117, 189, 182, 0.5);
-                transform: scale(1);
-            }
         }
 
         .top.active {
@@ -86,10 +82,6 @@
             font-size: 30px;
             color: #FFFFFF;
             box-shadow: 0 1px 4px 0 #009688;
-            &:active {
-                background: rgba(0, 150, 136, 0.7);
-                transform: scale(1);
-            }
         }
         .bottom.active{
             background: rgba(0, 150, 136, 0.7);
