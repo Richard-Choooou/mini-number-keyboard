@@ -75,6 +75,11 @@
             }
         }
 
+        .top.active {
+            background: rgba(117, 189, 182, 0.5);
+            transform: scale(1);
+        }
+
         .bottom {
             flex: 1;
             background: #009688;
@@ -85,6 +90,10 @@
                 background: rgba(0, 150, 136, 0.7);
                 transform: scale(1);
             }
+        }
+        .bottom.active{
+            background: rgba(0, 150, 136, 0.7);
+            transform: scale(1);
         }
     }
 }

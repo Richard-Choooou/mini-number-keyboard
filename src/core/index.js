@@ -61,19 +61,19 @@ class Keyboard {
             for(let target = e.target; target && target != this; target = target.parentNode) {
                 let keyCode = target.getAttribute('data-keycode')
                 if(keyCode) {
-                    keyCode.setAttribute('class','')
-                    status = keyCode
-                    keyCode.setAttribute('class','active')
+                    status = target
+                    target.classList.remove('active')
+                    target.classList.add("active");
                     self.dispatchEvent('keydown', keyCode)
                     return
                 }
             }
         })
         this.container.addEventListener('touchend',function(){
-            status.setAttribute('class','')
+            status.classList.remove('active')
         })
         this.container.addEventListener('touchmove',function(){
-            status.setAttribute('class','')
+            status.classList.remove('active')
         })
     }
 }
