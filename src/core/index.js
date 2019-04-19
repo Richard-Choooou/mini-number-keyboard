@@ -69,11 +69,23 @@ class Keyboard {
                 }
             }
         })
-        this.container.addEventListener('touchend',function(){
+        this.container.addEventListener('touchend',function(e){
             status.classList.remove('active')
+            for(let target = e.target; target && target != this; target = target.parentNode) {
+                let keyCode = target.getAttribute('data-keycode')
+                if(keyCode) {
+                    target.classList.remove('active')
+                }
+            }
         })
-        this.container.addEventListener('touchmove',function(){
+        this.container.addEventListener('touchmove',function(e){
             status.classList.remove('active')
+            for(let target = e.target; target && target != this; target = target.parentNode) {
+                let keyCode = target.getAttribute('data-keycode')
+                if(keyCode) {
+                    target.classList.remove('active')
+                }
+            }
         })
     }
 }
