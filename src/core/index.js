@@ -59,12 +59,32 @@ class Keyboard {
 
     initEvent() {
         const self = this
-        this.container.addEventListener('click', function(e) {
+        this.container.addEventListener('touchstart',function(e){
             for(let target = e.target; target && target != this; target = target.parentNode) {
                 let keyCode = target.getAttribute('data-keycode')
                 if(keyCode) {
+                    target.classList.add("active");
+                    target.classList.remove('active')
                     self.dispatchEvent('keydown', keyCode)
                     return
+                }
+            }
+        })
+        this.container.addEventListener('touchend',function(e){
+            status.classList.remove('active')
+            for(let target = e.target; target && target != this; target = target.parentNode) {
+                let keyCode = target.getAttribute('data-keycode')
+                if(keyCode) {
+                    target.classList.remove('active')
+                }
+            }
+        })
+        this.container.addEventListener('touchmove',function(e){
+            status.classList.remove('active')
+            for(let target = e.target; target && target != this; target = target.parentNode) {
+                let keyCode = target.getAttribute('data-keycode')
+                if(keyCode) {
+                    target.classList.remove('active')
                 }
             }
         })
