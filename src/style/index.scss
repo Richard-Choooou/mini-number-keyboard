@@ -1,6 +1,12 @@
 .keyboard-container {
     display: flex;
     width: 100%;
+    user-select: none;
+
+    img {
+        pointer-events: none; 
+    }
+    
     > * {
         margin: 0;
         padding: 0;
@@ -28,7 +34,7 @@
                 background: #f7f8f9;
 
                 &:active {
-                    background: #d4d4d480;
+                    background: rgba(212, 212, 212, 0.45);
                 }
 
                 &:nth-of-type(2) {
@@ -63,7 +69,7 @@
             font-size: 20px;
             color: #009688;
             &:active {
-                background: #cceae78f;
+                background: rgba(117, 189, 182, 0.5);
                 transform: scale(1);
             }
         }
@@ -75,7 +81,7 @@
             color: #FFFFFF;
             box-shadow: 0 1px 4px 0 #009688;
             &:active {
-                background: #009688c9;
+                background: rgba(0, 150, 136, 0.7);
                 transform: scale(1);
             }
         }

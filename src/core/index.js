@@ -5,10 +5,18 @@ class Keyboard {
         this.options = Object.assign({
             container: ''
         }, options)
-        this.container = document.getElementById(this.options.container)
+        this.container = this.getDom(this.options.container)
         this.container.classList.add('keyboard-container')
         this.initDom()
         this.initEvent()
+    }
+
+    getDom(target) {
+        if (target instanceof HTMLElement) {
+            return target
+        } else {
+            return document.getElementById(target)
+        }
     }
 
     initDom() {
